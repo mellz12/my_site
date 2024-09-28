@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Безопасность Web-ресурсов</title>
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-3.7.0.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head> 
+
+<body>
+
+    <div id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Главная</a>
+        <a href="danger.html">Угрозы безопасности</a>
+        <a href="methods.html">Методы защиты</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+    </div>
+
+    <span id="menu-button" onclick="openNav()">&#9776; Меню</span>
+
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "225px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>

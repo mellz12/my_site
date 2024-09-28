@@ -1,0 +1,19 @@
+<div id="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="#">Главная</a>
+    <a href="#">Угрозы безопасности</a>
+    <a href="#">Методы защиты</a>
+    <a href="#">Новости</a>
+    <a href="#">Контакты</a>
+</div>
+
+<span id="menu-button" onclick="openNav()">&#9776; Меню</span>
+<script>
+    function openNav() {
+        document.getElementById("sidenav").style.width = "225px";
+    }
+
+    function closeNav() {
+        document.getElementById("sidenav").style.width = "0";
+    }
+</script>

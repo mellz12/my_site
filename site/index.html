@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Безопасность Web-ресурсов</title>
+    <link rel="stylesheet" href="https://assets.ubuntu.com/v1/vanilla-framework-version-4.16.0.min.css" />
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="index.html">Главная</a>
+        <a href="danger.html">Угрозы безопасности</a>
+        <a href="methods.html">Методы защиты</a>
+        <a href="news.html">Новости</a>
+        <a href="contacts.html">Контакты</a>
+    </div>
+
+    <span id="menu-button" onclick="openNav()">&#9776;</span>
+    <div id="heading-text">
+        <h1>Добро пожаловать на сайт "Безопасность Web-ресурсов"</h1>
+        <h2">На этом сайте вы найдете информацию о различных угрозах безопасности для web-ресурсов и
+            методах
+            защиты от них.</h2>
+    </div>
+    <br>
+    <div id="text">
+        <p class="big-text"> Под безопасностью веб‑сервисов, как правило, понимается обеспечение сохранности
+            данных и их недоступность для посторонних лиц, а также способность приложения сохранять работоспособность
+            при
+            кибератаках и не подвергаться заражению вирусами</p>
+        <p class="main-text"> Безопасность веб‑приложений зависит от качества их программного кода, от квалификации
+            системного администратора и от компетенций всех пользователей, имеющих доступ к чувствительной информации.
+        </p>
+        <p class="main-text"><b>То есть причинами угроз безопасности — взломов и утечек данных — могут быть:</b></p>
+        <ul class="p-list--divided">
+            <li class="p-list__item has-bullet">Уязвимости самого сайта / приложения перед кибератакой — например,
+                отсутствие защиты от перебора паролей, возможность внедрения стороннего кода (XSS, SQL‑инъекции,
+                отсутствие защиты от CSRF)</li>
+            <li class="p-list__item has-bullet">Недостаточное быстродействие системы или повышенная ресурсоёмкость
+                обработки запросов, что приводит к уязвимости к атакам типа «отказ в обслуживании» — (D)DoS</li>
+            <li class="p-list__item has-bullet">Ошибки, допущенные администратором веб‑сервера — несвоевременное
+                обновление ПО или небезопасное конфигурирование сервисов</li>
+            <li class="p-list__item has-bullet">Незнание или несоблюдение сотрудниками банальных правил безопасности —
+                простые пароли, ввод данных на фишинговых сайтах, заражение вирусами ПК.</li>
+        </ul>
+    </div>
+    <script>
+        function openNav() {
+            document.getElementById("sidenav").style.width = "225px";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+    </script>
+
+</body>
+
+</html>
